@@ -1,0 +1,44 @@
+/* BasicSidebar.css */
+.custom-sidebar {
+    background-color: #581845;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-tittle {
+    color: white  ;
+  }
+
+  .custom-sidebar .nav-link {
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .custom-sidebar .nav-link:hover {
+    color:black;
+    transform: translateX(5px);
+  }
+  
+  .custom-sidebar .nav-icon {
+    transition: transform 0.3s;
+  }
+  
+  .custom-sidebar .nav-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .nav-icon {
+    background-color: white;
+    border-radius: 7px;
+  }
+
+  .white-text {
+    color: white;
+  }
+
+  .nav-group-toggler {
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+  }
+
+  
+  
