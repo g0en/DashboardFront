@@ -5,14 +5,12 @@ Este proyecto es un dashboard para la gestión de un negocio de alimentos llamad
 
 ## Instalación y Ejecución
 
-- Clona este repositorio: git clone https://github.com/SAlvarezBulfon/dashboard.git
+- Clona este repositorio: git clone https://github.com/g0en/DashboardFront.git
 
 ### Instala las dependencias:
 - npm install
 ### Ejecuta el proyecto:
 - npm run dev
-### Ejecuta json-server en otra terminal para simular una API:
-- json-server --watch db.json
 
 ## Características
 - Incluye productos, insumos, categorías y promociones.
