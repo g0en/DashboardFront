@@ -19,7 +19,7 @@ const TableComponent: React.FC<Props> = ({ data, columns, onEdit, onDelete }) =>
   const [orderBy, setOrderBy] = useState<keyof Row>('');
   const [order, setOrder] = useState<'asc' | 'desc'>('asc');
 
-  const handleChangePage = (event: unknown, newPage: number) => {
+  const handleChangePage = (newPage: number) => {
     setPage(newPage);
   };
 
@@ -88,7 +88,7 @@ const TableComponent: React.FC<Props> = ({ data, columns, onEdit, onDelete }) =>
         count={data.length}
         rowsPerPage={rowsPerPage}
         page={page}
-        onPageChange={handleChangePage}
+        onPageChange={(_, newPage) => handleChangePage(newPage)}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
     </>
