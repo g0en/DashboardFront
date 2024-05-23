@@ -68,7 +68,7 @@ const ModalEditarArticuloInsumo: React.FC<Props> = ({ show, onClose, getArticulo
                     })}
                     initialValues={initialValues}
                     enableReinitialize={true}
-                    onSubmit={async (values: IArticuloInsumo, { setSubmitting }) => {
+                    onSubmit={async (values: IArticuloInsumo) => {
                         try {
                             await articuloInsumoService.put(url + "articulosInsumos", values.id.toString(), values);
                             setSuccessMessage("Se ha actualizado correctamente.");
