@@ -1,5 +1,3 @@
-import ICategoria from './Categoria';
-
-export default interface Row extends ICategoria{
+export default interface Row{
     [key: string]: any;
   }
