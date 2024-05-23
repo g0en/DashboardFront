@@ -22,7 +22,26 @@ const ModalSucursal: React.FC<{ getSucursales: () => void }> = ({
         horarioCierre: "",
         categorias: [],
         promociones: [],
-        domicilio: undefined
+        domicilio: {
+            id: 0,
+            calle: "",
+            numero: 0,
+            cp: 0,
+            piso: 0,
+            nroDpto: 0,
+            localidad: {
+                id: 0,
+                nombre: "",
+                provincia: {
+                    id: 0,
+                    nombre: "",
+                    pais: {
+                        id: 0,
+                        nombre: ""
+                    }
+                }
+            }
+        }
     };
 
     const modal = useAppSelector((state) => state.modal.modal);

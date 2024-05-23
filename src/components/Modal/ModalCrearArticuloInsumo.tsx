@@ -79,7 +79,7 @@ const ModalCrearArticuloInsumo: React.FC<Props> = ({ show, onClose, getArticulos
                     })}
                     initialValues={initialValues}
                     enableReinitialize={true}
-                    onSubmit={async (values: IArticuloInsumo, { setSubmitting }) => {
+                    onSubmit={async (values: IArticuloInsumo) => {
                         try {
                             await articuloInsumoService.post(url + "articulosInsumos", values);
                             setSuccessMessage("Se ha agregado correctamente.");
